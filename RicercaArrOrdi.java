@@ -1,4 +1,3 @@
-package eserciziRicors;
 import java.util.Scanner;
 
 public class RicercaArrOrdi {
