@@ -1,4 +1,3 @@
-package OOP1.TicTacToe;
 import java.util.Scanner;
 
 public class MainTris {
