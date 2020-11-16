@@ -1,5 +1,3 @@
-package OOP1.Lampadina;
-
 public class AttStacCorrente {
 
     Corrente corrente;
