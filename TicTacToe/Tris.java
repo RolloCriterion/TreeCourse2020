@@ -1,4 +1,3 @@
-package OOP1.TicTacToe;
 
 public class Tris {
 
