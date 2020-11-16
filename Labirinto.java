@@ -1,4 +1,3 @@
-package Labirynth;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -12,7 +11,6 @@ public class Labirinto {
                               {'w', '-', 'w', '-', 'w'},
                               {'w', 'w', 'w', 'w', 'w'},};
 
-        //char[][] labirinto2 = new char[10][10];
         while(!gameOver){
             stampaLabirinto(labirinto);
             System.out.println("Usa WASD per muoverti");
@@ -20,7 +18,6 @@ public class Labirinto {
             movement(labirinto, wasd);
             gameOver=checkGO(labirinto);
         }
-        //stampaLabirintoCasuale(labirinto2);
     }
     public static void stampaLabirinto(char[][] labirint){
         for(int row=0; row<labirint.length; row++){
@@ -99,25 +96,5 @@ public class Labirinto {
             return true;
         }
         return false;
-    }
-
-    public static void stampaLabirintoCasuale(char[][] labirint2){
-        Random rand = new Random();
-        for(int row=0; row<labirint2.length; row++){
-            for(int column=0; column<labirint2.length; column++){
-                int random = rand.nextInt(2);
-                if(row==0 || row== labirint2.length-1){
-                    System.out.print('w');
-                }
-                else if(column==0 || column== labirint2.length-1){
-                    System.out.print('w');
-                }
-                else if(random==0) System.out.print('w');
-                else System.out.print('-');
-
-                System.out.print(labirint2[row][column] +" ");
-            }
-            System.out.println();
-        }
     }
 }
