@@ -1,5 +1,3 @@
-package OOP1.Lampadina;
-
 import java.util.Scanner;
 
 public class MainContatore {
